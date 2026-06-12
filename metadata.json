@@ -1,0 +1,6 @@
+{
+  "name": "126 Dim Sum Website",
+  "description": "A professional, classic single-page website for a traditional dim sum restaurant, featuring menus, history, and contact information.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

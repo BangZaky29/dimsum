@@ -80,37 +80,37 @@ export default function MenuGrid() {
         {/* 2x2 Grid / Checkerboard */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-beige-100 shadow-2xl overflow-hidden">
           {/* Dish 1: Text | Img */}
-          <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="p-8 lg:p-10 flex flex-col justify-center bg-white border border-gray-100">
+          <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="order-2 md:order-none p-6 md:p-8 lg:p-10 flex flex-col justify-center bg-white border border-gray-100">
             <h3 className="font-serif text-maroon-700 font-bold tracking-wide mb-3">{dishes[0].title}</h3>
             <p className="font-sans text-gray-600 text-sm leading-relaxed">{dishes[0].desc}</p>
           </motion.div>
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }} className="h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={() => setSelectedImage(dishes[0].img)}>
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }} className="order-1 md:order-none h-56 md:h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={() => setSelectedImage(dishes[0].img)}>
             <img src={dishes[0].img} alt={dishes[0].title} className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
           </motion.div>
 
           {/* Dish 2: Text | Img */}
-          <motion.div initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }} className="p-8 lg:p-10 flex flex-col justify-center bg-white border border-gray-100">
+          <motion.div initial={{ opacity: 0, y: -50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }} className="order-4 md:order-none p-6 md:p-8 lg:p-10 flex flex-col justify-center bg-white border border-gray-100">
             <h3 className="font-serif text-maroon-700 font-bold tracking-wide mb-3">{dishes[1].title}</h3>
             <p className="font-sans text-gray-600 text-sm leading-relaxed">{dishes[1].desc}</p>
           </motion.div>
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }} className="h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={() => setSelectedImage(dishes[1].img)}>
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }} className="order-3 md:order-none h-56 md:h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={() => setSelectedImage(dishes[1].img)}>
             <img src={dishes[1].img} alt={dishes[1].title} className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
           </motion.div>
 
           {/* Dish 3: Img | Text */}
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }} className="h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={() => setSelectedImage(dishes[2].img)}>
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.4 }} className="order-5 md:order-none h-56 md:h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={() => setSelectedImage(dishes[2].img)}>
             <img src={dishes[2].img} alt={dishes[2].title} className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
           </motion.div>
-          <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.5 }} className="p-8 lg:p-10 flex flex-col justify-center bg-white border border-gray-100">
+          <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.5 }} className="order-6 md:order-none p-6 md:p-8 lg:p-10 flex flex-col justify-center bg-white border border-gray-100">
             <h3 className="font-serif text-maroon-700 font-bold tracking-wide mb-3">{dishes[2].title}</h3>
             <p className="font-sans text-gray-600 text-sm leading-relaxed">{dishes[2].desc}</p>
           </motion.div>
 
           {/* Dish 4: Img | Text */}
-          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.6 }} className="h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={() => setSelectedImage(dishes[3].img)}>
+          <motion.div initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.6 }} className="order-7 md:order-none h-56 md:h-64 lg:h-auto overflow-hidden cursor-pointer" onClick={() => setSelectedImage(dishes[3].img)}>
             <img src={dishes[3].img} alt={dishes[3].title} className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
           </motion.div>
-          <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.7 }} className="p-8 lg:p-10 flex flex-col justify-center bg-white border border-gray-100">
+          <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.7 }} className="order-8 md:order-none p-6 md:p-8 lg:p-10 flex flex-col justify-center bg-white border border-gray-100">
             <h3 className="font-serif text-maroon-700 font-bold tracking-wide mb-3">{dishes[3].title}</h3>
             <p className="font-sans text-gray-600 text-sm leading-relaxed">{dishes[3].desc}</p>
           </motion.div>

@@ -150,12 +150,30 @@ export default function Legality() {
               </div>
 
               {/* iframe body */}
-              <div className="flex-1 w-full h-full bg-gray-100">
-                <iframe 
-                  src={`${selectedDoc}#view=FitH`} 
-                  className="w-full h-full border-none"
-                  title="PDF Viewer"
-                />
+              <div className="flex-1 w-full h-full bg-gray-100 relative flex flex-col">
+                
+                {/* Fallback Action Bar (Visible only on mobile) */}
+                <div className="bg-maroon-50 border-b border-maroon-100 p-3 sm:hidden flex flex-row items-center justify-between z-10 shadow-sm shrink-0">
+                  <span className="text-[10px] text-maroon-900/80 leading-tight flex-1 pr-2">
+                    Gagal memuat? Buka dokumen secara langsung:
+                  </span>
+                  <a 
+                    href={selectedDoc} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-maroon-700 text-white text-[10px] font-bold py-2 px-4 rounded-full shadow-md whitespace-nowrap"
+                  >
+                    Buka / Unduh
+                  </a>
+                </div>
+
+                <div className="flex-1 w-full relative">
+                  <iframe 
+                    src={import.meta.env.PROD ? `https://docs.google.com/viewer?url=${encodeURIComponent(import.meta.env.VITE_APP_URL + selectedDoc?.replace(/^\//, ''))}&embedded=true` : `${selectedDoc}#view=FitH`} 
+                    className="absolute inset-0 w-full h-full border-none"
+                    title="PDF Viewer"
+                  />
+                </div>
               </div>
             </motion.div>
           </motion.div>

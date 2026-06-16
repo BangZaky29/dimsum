@@ -11,6 +11,7 @@ import MenuGrid from './components/MenuGrid';
 import Testimonials from './components/Testimonials';
 import LatestNews from './components/LatestNews';
 import CateringForm from './components/CateringForm';
+import Legality from './components/Legality';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -25,6 +26,7 @@ export default function App() {
         <Testimonials />
         <LatestNews />
         <CateringForm />
+        <Legality />
         <Contact />
       </main>
       <Footer />

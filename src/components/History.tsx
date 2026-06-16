@@ -25,18 +25,23 @@ export default function History() {
              {/* Abstract decorative graphic */}
              <div className="absolute top-0 right-0 opacity-5 w-32 h-32 bg-gold-600 rounded-full blur-2xl" />
 
-            <h2 className="text-3xl md:text-4xl font-display text-charcoal-900 mb-6 drop-shadow-sm font-bold tracking-wider">
-              OUR HISTORY
+            <h2 className="text-3xl md:text-4xl font-display text-charcoal-900 mb-6 drop-shadow-sm font-bold tracking-wider uppercase">
+              About Us
             </h2>
             
-            <p className="font-serif text-charcoal-800 leading-relaxed md:text-lg font-medium mb-10 max-w-md text-gold-700">
-              Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
+            <div className="font-sans text-charcoal-800 leading-relaxed md:text-base mb-10 max-w-md space-y-4 text-justify">
+              <p>
+                <strong className="text-maroon-900 font-bold">CV Olahan Makanan LapanLapan</strong> adalah pelopor produsen <em>frozen dimsum</em> premium skala mikro yang berbasis di Pondok Gede, Bekasi. Kami berkomitmen penuh untuk menghadirkan cita rasa terbaik dengan menggunakan bahan baku segar, halal, dan diproses secara higienis.
+              </p>
+              <p>
+                Melalui dedikasi tinggi, kami memproduksi aneka varian unggulan (Dimsum Lumpia, Mozarela, Nori, dan Spicy) yang tidak hanya memanjakan lidah setiap pelanggan, namun juga dirancang untuk mendukung pertumbuhan dan kesuksesan mitra usaha kami.
+              </p>
+            </div>
 
             <div>
-              <button onClick={() => alert("Our full history page is coming soon!")} className="bg-maroon-700 hover:bg-maroon-900 text-white font-serif tracking-widest text-xs uppercase py-3 px-8 rounded-full transition-colors font-medium shadow-md">
-                Read More
-              </button>
+              <a href="#menu" className="inline-block bg-maroon-700 hover:bg-maroon-900 text-white font-serif tracking-widest text-xs uppercase py-3 px-8 rounded-full transition-colors font-bold shadow-md cursor-pointer">
+                Lihat Menu Kami
+              </a>
             </div>
           </div>
         </div>

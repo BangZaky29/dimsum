@@ -5,7 +5,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <motion.header 
+    <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
@@ -30,8 +30,8 @@ export default function Header() {
           {/* Center Logo */}
           <div className="flex-shrink-0 flex justify-center absolute left-1/2 -translate-x-1/2 h-full z-20">
             <div className="bg-maroon-700 w-32 h-28 absolute -top-0 flex flex-col justify-center items-center shadow-lg shadow-black/20 rounded-b-md">
-              <span className="text-2xl font-bold text-gold-500 font-serif pb-1 text-center leading-none mt-2">Lapan<br/>Lapan</span>
-              <span className="text-[10px] font-sans tracking-widest text-white border-t border-gold-500/30 pt-2 w-20 text-center uppercase mt-1 leading-tight">Olahan<br/>Makanan</span>
+              <span className="text-2xl font-bold text-gold-500 font-serif pb-1 text-center leading-none mt-2">Lapan<br />Lapan</span>
+              <span className="text-[10px] font-sans tracking-widest text-white border-t border-gold-500/30 pt-2 w-20 text-center uppercase mt-1 leading-tight">DIMSUM<br />LARIS</span>
             </div>
           </div>
 
@@ -44,7 +44,7 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <div className="xl:hidden ml-auto relative z-50">
-            <button 
+            <button
               className="text-white p-2 focus:outline-none"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
@@ -60,7 +60,7 @@ export default function Header() {
         {/* Mobile Menu Dropdown */}
         <AnimatePresence>
           {isMobileMenuOpen && (
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
